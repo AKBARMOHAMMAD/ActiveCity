@@ -16,11 +16,20 @@ Including another URLconf
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path
+from django.views.generic import TemplateView
 
 from ActiveCity import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('index/', TemplateView.as_view(template_name="index.html"),name="home"),
+
+
+#individual urls
+    path('ac_admin/',TemplateView.as_view(template_name='ac_admin/index.html'),name='ac_admin/index'),
+    path('ac_officer/',TemplateView.as_view(template_name='ac_officer/index.html'),name='ac_officer/index'),
+    path('ac_citizen/',TemplateView.as_view(template_name='ac_citizen/index.html'),name='ac_citizen/index'),
+
 ]
 if settings.DEBUG:
     urlpatterns +=static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

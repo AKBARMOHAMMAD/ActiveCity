@@ -15,16 +15,18 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '0s-8z0!=-gr_%^w50jkm%$p+%(cokne2qi-zg1w8s*q4#cs*3)'
+SECRET_KEY = '*-nhyxs)_)^n99&j^_%2e=xj#6t5kudcw67kkae(e$9=c)&1)('
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = []
+
 
 # Application definition
 
@@ -37,8 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'ac_admin.apps.AcAdminConfig',
     'ac_citizen',
-    'ac_officer',
     'ac_login',
+    'ac_officer',
 ]
 
 MIDDLEWARE = [
@@ -72,6 +74,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ActiveCity.wsgi.application'
 
+
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 
@@ -81,6 +84,7 @@ DATABASES = {
         'NAME': os.path.join(BASE_DIR, 'ActiveCity.sqlite3'),
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
@@ -100,6 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
 
@@ -113,9 +118,10 @@ USE_L10N = True
 
 USE_TZ = True
 
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
 STATIC_URL = '/static/'
-MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+MEDIA_URL='/AKBAR/'
+MEDIA_ROOT=os.path.join(BASE_DIR,'AKBAR')

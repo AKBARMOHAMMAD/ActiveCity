@@ -1,0 +1,37 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table align="center">
+    {% include 'title.html' %}
+    {% include 'menu.html' %}
+</table>
+<table align="center" border="0">
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr></tr>
+    <tr>
+        <th><img src="{% static 'images/Officer.png' %}" width="150" height="200"></th>
+        <th>
+            <table align="center" border="0">
+                <tr><th width="200" height="100">Officer Login</th></tr>
+                <tr>
+                    <th> UserName:<input type="text" required placeholder="Username" name="officer_name"></th>
+                </tr>
+                <tr>
+                    <th> Password:<input type="password" required placeholder="Password" name="officer_password"></th>
+                </tr>
+                <tr><th>
+                    <button type="submit">Login</button></th>
+                </tr>
+            </table>
+        </th>
+    </tr>
+</table>
+</body>
+</html>

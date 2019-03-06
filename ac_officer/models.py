@@ -1,14 +1,14 @@
 from django.db import models
-from ac_admin.models import department
-from ac_login.models import login
+from ac_admin.models import Department
+from ac_login.models import Login
+#ac_officers
 
 
-# ac_officer
 
-class officer(models.Model):
+class Officers(models.Model):
     idno =models.IntegerField(primary_key=True)
     name =models.CharField(max_length=20)
-    department=models.ForeignKey(department,on_delete=models.CASCADE)
+    department =models.ForeignKey(Department,on_delete=models.CASCADE)
     contact_number =models.IntegerField()
-    image=models.ImageField(upload_to='officer/')
-    username=models.ForeignKey(login,on_delete=models.CASCADE)
+    image =models.ImageField(upload_to='officers/')
+    username=models.ForeignKey(Login,on_delete=models.CASCADE)
